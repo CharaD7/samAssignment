@@ -18,8 +18,8 @@ public class Grader {
 	public static void main(String[] args) {
 		
 		// Declare global variables
-		int assessment_score = 0, exam_score = 0, checker = 0, fee_amount = 0;
-		String paid = "Y", cert_status;
+		int assessment_score = 0, exam_score = 0, fee_amount = 0;
+		String cert_status;
 		
 		
 		// Creating an instance of data picker for storing user input
@@ -46,21 +46,6 @@ public class Grader {
 		}
 		
 		int total_score = exam_score + assessment_score;
-		
-		// Getting fee status from user
-		System.out.print("Have you paid your fees in full? (Y/N, y/n, Yes/No, YES/NO): ");
-		String fees = picker.next(); // Capturing user input
-		
-		if (!(String.class.isInstance(paid))) {
-			System.out.println("Sorry, you supplied an invalid answer. Program will now exit. ");
-			System.exit(0);
-		}
-		else if (fees.toUpperCase() == "Y" || fees.toUpperCase() == "YES") {
-			paid = "Y";
-		}
-		else if (fees.toUpperCase() == "N" || fees.toUpperCase() == "NO") {
-			paid = "N";
-		}
 
 		// Getting Fee amount paid from user
 		System.out.print("Please enter your fee amount paid: ");
