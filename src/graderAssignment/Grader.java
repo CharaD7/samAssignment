@@ -130,7 +130,7 @@ public class Grader {
 				System.out.println("Sorry, you failed this round. Below is the summary:");
 				System.out.println("=================================================================");
 				System.out.println("Total Score: " +  total_score);
-				System.out.println("Exam Score: " +  exam_score);
+				System.out.println("Low Exam Score: " +  exam_score);
 				System.out.println("Low Assessment Score: " +  assessment_score);
 				cert_status = "NOT ISSUED";
 				System.out.println("Your cert status is: " + cert_status);
